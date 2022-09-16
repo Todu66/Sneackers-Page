@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh';
+    font-size: 16px;
+    overflow-x: hidden;
+    
+}
+
+/* div {
+    border: 1px solid red;
+} */
+
+html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapp {
+    position: relative; 
+}
+
+
+.nav_ul2 {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.5rem 0 0.5rem;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header .left img {
+    width: 8rem;
+}
+
+nav img{
+    width: 2rem;
+}
+
+nav img:nth-of-type(1) {
+    width: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 0.8rem;
+    
+}
+
+
+
+
+/* #---MOBILE-NAVIGATION-START---# */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+
+}
+  
+.icon-mobile-nav {
+    height: 2.8rem;
+    width: 2.8rem;
+    color: #333;
+}
+  
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
+.icon-mobile-nav[name="menu-outline"] {
+    width: 2rem;
+}
+
+.navbar .nav_ul li a{
+    color: #000;
+}
+
+/* START OF GRID IMAGEE */
+.grid_images img {
+    cursor: pointer;
+}
+
+.top img {
+    width: 100%;
+}
+
+.top {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.down_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    padding: 0.3rem;
+    gap: 0.2rem;
+    
+}
+
+.down_grid img {
+    width: 4rem;
+}
+
+
+/* Start if centered */
+
+.centered {
+    padding: 1rem;
+}
+
+.text p:nth-of-type(1) {
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+}
+
+.text h3 {
+    font-size: 25px;
+    color: hsl(220, 13%, 13%);
+    margin-top: 0.5rem;
+}
+
+.text p:nth-of-type(2) {
+    margin-top: 0.5rem;
+    color: hsl(220, 14%, 75%);
+    font-weight: 700;
+}
+
+
+.sales {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+
+.sales h2:nth-of-type(1) {
+    color: hsl(220, 13%, 13%);
+}
+
+.sales h2:nth-of-type(2) {
+    margin-left: 0.5rem;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    font-size: 20px;
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+
+.sales h2:nth-of-type(3) {
+    margin-left: 2rem;
+    text-decoration: line-through;
+    font-size: 20px;
+    color: hsl(220, 14%, 75%);
+} 
+
+/* START OF BUTTONS */
+
+.two_button {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 16px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.add img {
+    cursor: pointer;
+}
+
+.checkout {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    gap: 1rem;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkout p {
+    color: #fff;
+}
+
+.checkout img {
+    filter: brightness(0) invert(1);
+}
+
+/* CART */
+
+.checkout_show {
+    display: none;
+    position: absolute;
+    top: 4.8rem;
+    right: 1rem;
+    background-color: #fff;
+    width: 15rem;
+    height: 10rem;
+    border-radius: 15px;
+}
+
+.cart-show {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: solid 1px;
+}
+
+.cart-show p:nth-child(2) {
+    text-transform: uppercase;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.product img:nth-child(2) {
+    width: 4rem;
+}
+
+.cart_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#trash {
+    cursor: pointer;
+}
+
+.addToCart {
+    opacity: 1;
+}
+
+#anotherCart {
+    display: none;
+}
+
+/* #cart_cta {
+    z-index: 2;
+} */
+
+.cart-number {
+    position: relative;
+    
+}
+
+
+
+#number-change {
+    position: absolute;
+    opacity: 1;
+    background-color: orange;
+    padding: 0 0.2rem;
+    border-radius: 15px;
+    top: 0;
+    right: 0;
+    
+}
